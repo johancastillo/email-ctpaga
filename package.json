@@ -1,0 +1,11 @@
+{
+  "name": "email-ctpaga",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:johancastillo/email-ctpaga.git",
+  "author": "Johan Castillo <jcjohan2707@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}
