@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-    <table style="width: 100%; padding: 10px; margin: 0 auto; border-collapse: collapse;">
+extends ../templates/template
+
+block content
+    table(style="width: 100%; padding: 10px; margin: 0 auto; border-collapse: collapse;")
 
         <tr>
             <td style="background-color: #fff; text-align: left; padding: 0;">
@@ -51,36 +44,30 @@
                 <div style="color: #34495e; margin: 4% 10% 2%; text-align: left; font-family: sans-serif;">
 
                     <p style="color:#59595e; margin: 0 0 7px;">
-                        Estimado/a <strong>JORGE PAISANO</strong>
+                        | Estimado/a <strong>JORGE PAISANO</strong>
                     </p>
 
                     <br>
                     <br>
 
-                    <p style="color:#59595e; margin: 0 0 7px;">
-                        Hemos enviado los fondos que tenía en su cartera por Concepto de Ventas de Productos y/o
-                        Servicios, a la cuenta proporcionada por Ud en el módulo de Bancos,
+                    p(style="color:#59595e; margin: 0 0 7px;") Hemos enviado los fondos que tenía en su cartera por Concepto de Ventas de Productos y/o Servicios, a la cuenta proporcionada por Ud en el módulo de Bancos,
                         
-                        <br>
-                        <br>
                         
-                        Nótese que si los fondos fueron transferidos a Bancos Nacionales, estarán disponibles hoy
-                        dd/mm/aaaa después de la 1:00 pm, en caso de ser Bancos en Panamá o USA, se harán
-                        efectivos a más tardar en 48 horas a partir de la recepción de este correo.
-                    </p>
+                        
+                    p Nótese que si los fondos fueron transferidos a Bancos Nacionales, estarán disponibles hoy dd/mm/aaaa después de la 1:00 pm, en caso de ser Bancos en Panamá o USA, se harán efectivos a más tardar en 48 horas a partir de la recepción de este correo.
 
-                    <br>
+                    br
 
-                    <br>
+                    br
                     <br>
                     <br>
                     <br>
 
                     <h4 style="color:#59595e; margin: 0 0 7px;">
-                        Muchas gracias,
+                        | Muchas gracias,
                         <br>
                         <br>
-                        El equipo de CTpaga.
+                        | El equipo de CTpaga.
                     </h4>
 
                     <br>
@@ -96,70 +83,7 @@
 
 
         <tr>
-            <td style="background: #fff;">
-                <div style="display: flex; width: 90%; max-width: 250px; margin: 0 auto;">
-                    
-                    <a href="">
-                        <img 
-                            src="https://johancastillo.github.io/email-ctpaga/img/icono-redes-1.png" 
-                            alt=""
-                            width="95%"
-                        >
-                    </a>
-
-                    <a href="">
-                        <img 
-                            src="https://johancastillo.github.io/email-ctpaga/img/icono-redes-2.png"
-                            alt=""
-                            width="95%"
-                        >
-                    </a>
-
-                    <a href="">
-                        <img 
-                            src="https://johancastillo.github.io/email-ctpaga/img/icono-redes-3.png" 
-                            alt=""
-                            width="95%"
-                        >
-                    </a>
-
-                    <a href="">
-                        <img 
-                            src="https://johancastillo.github.io/email-ctpaga/img/icono-redes-4.png"
-                            alt=""
-                            width="95%"
-                        >
-                    </a>
-
-                    <a href="">
-                        <img 
-                            src="https://johancastillo.github.io/email-ctpaga/img/icono-redes-5.png" 
-                            alt=""
-                            width="95%"
-                        >
-                    </a>
-
-                    <a href="">
-                        <img 
-                            src="https://johancastillo.github.io/email-ctpaga/img/icono-redes-6.png"
-                            alt=""
-                            width="95%"
-                        >
-                    </a>
-
-                    
-                </div>
-
-                <div style="text-align: center; font-size: 14px; color:#59595e;font-family: sans-serif;">
-                    <p>
-                        ¿Quieres cambiar los temas por los que te contactamos? Entra en
-                        <br>
-                        tus <a href="">Ajustes de notificaciones</a>. No podemos recibir respuestas a este
-                        <br>
-                        correo electrónico. Si necesitas ayuda. Visita nuestro <a href="">Centro de ayuda</a>.
-                    </p>
-                </div>
-            </td>
+            include ../components/socials
         </tr>
 
         <tr>
@@ -172,8 +96,4 @@
             </td>
         </tr>
 
-    </table>
-
-
-</body>
-</html>
+    
